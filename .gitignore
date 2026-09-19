@@ -5,3 +5,6 @@ outputs/*
 pseudo/*.UPF
 __pycache__/
 *.pyc
+
+tmp/
+tin111.pot

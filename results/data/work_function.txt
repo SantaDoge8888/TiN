@@ -1,0 +1,18 @@
+Ti-terminated TiN(111) / vacuum benchmark
+
+Fermi energy (slab)        = 7.790000 eV
+Left vacuum level          = 12.409773 eV
+Right vacuum level         = 12.409746 eV
+Mean vacuum level          = 12.409760 eV
+Vacuum asymmetry           = 0.000027 eV
+WORK FUNCTION              = 4.619760 eV
+
+Literature comparison:
+Fonseca & Knizhnik (PRB 74, 195304 (2006)) report ~4.67 eV
+for a Ti-terminated 19-layer rocksalt TiN(111) slab in GGA.
+
+Do not expect bitwise agreement: this benchmark uses Quantum ESPRESSO,
+a different pseudopotential family, 60/600 Ry cutoffs, and this specific
+relaxation/vacuum setup. A result in the neighborhood of the literature
+value is the validation target; convergence should then be checked versus
+k-grid, vacuum thickness, slab thickness, and cutoff.
