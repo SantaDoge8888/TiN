@@ -1,0 +1,41 @@
+&CONTROL
+ calculation='scf',
+ prefix='tin111',
+ pseudo_dir='./pseudo/',
+ outdir='./tmp/',
+ verbosity='high',
+/
+&SYSTEM
+ ibrav=0,
+ nat=19,
+ ntyp=2,
+ ecutwfc=60.0,
+ ecutrho=600.0,
+ occupations='smearing',
+ smearing='mv',
+ degauss=0.01,
+ input_dft='PBE',
+ nbnd=120,
+/
+&ELECTRONS
+ conv_thr=1.0d-10,
+ electron_maxstep=300,
+ mixing_mode='plain',
+ mixing_beta=0.20,
+ diagonalization='david',
+/
+
+ATOMIC_SPECIES
+Ti 47.867  Ti.pbe-spn-rrkjus_psl.1.0.0.UPF
+N  14.0067 N.pbe-n-rrkjus_psl.1.0.0.UPF
+
+CELL_PARAMETERS angstrom
+3.0009611794 0.0000000000 0.0000000000
+1.5004805897 2.5989086171 0.0000000000
+0.0000000000 0.0000000000 42.0524708820
+
+ATOMIC_POSITIONS angstrom
+__RELAXED_POSITIONS__
+
+K_POINTS automatic
+24 24 1 0 0 0

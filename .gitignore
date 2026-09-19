@@ -1,0 +1,7 @@
+tmp/*
+!tmp/.gitkeep
+outputs/*
+!outputs/.gitkeep
+pseudo/*.UPF
+__pycache__/
+*.pyc

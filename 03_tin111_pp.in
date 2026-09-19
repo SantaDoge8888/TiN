@@ -1,0 +1,10 @@
+&INPUTPP
+ prefix='tin111',
+ outdir='./tmp/',
+ plot_num=11,
+ filplot='tin111.pot',
+/
+&PLOT
+ iflag=3,
+ output_format=3,
+/
