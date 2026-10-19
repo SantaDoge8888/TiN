@@ -54,15 +54,7 @@ Mean vacuum level          = {vv:.6f} eV
 Vacuum asymmetry           = {asym:.6f} eV
 WORK FUNCTION              = {wf:.6f} eV
 
-Literature comparison:
-Fonseca & Knizhnik (PRB 74, 195304 (2006)) report ~4.67 eV
-for a Ti-terminated 19-layer rocksalt TiN(111) slab in GGA.
 
-Do not expect bitwise agreement: this benchmark uses Quantum ESPRESSO,
-a different pseudopotential family, 60/600 Ry cutoffs, and this specific
-relaxation/vacuum setup. A result in the neighborhood of the literature
-value is the validation target; convergence should then be checked versus
-k-grid, vacuum thickness, slab thickness, and cutoff.
-"""
+
 report.write_text(body)
 print(body)
